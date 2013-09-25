@@ -8,7 +8,7 @@ GIT
 
 GIT
   remote: git@github.com:kuler/bootsy.git
-  revision: 2299dc150a798157f7f8d5ca6f45625f1b7c93df
+  revision: f379dfdedc1bc2e5f74827737e9635d86044ba84
   specs:
     bootsy (1.2.0)
       carrierwave (~> 0.9.0)
