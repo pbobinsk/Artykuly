@@ -2,4 +2,5 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 $(document).on "ready page:change", ->
-  $(Bootsy.init)
+  if $(".wysihtml5-toolbar").length == 0
+    $(Bootsy.init)
