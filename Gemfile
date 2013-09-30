@@ -47,4 +47,8 @@ end
 gem 'bootsy', :git => 'git@github.com:kuler/bootsy.git'
 
 # gem 'bootstrap-sass', '~> 2.3.2.1'
- gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
+gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch: '3'
+
+gem 'route_translator'
+
+gem 'inherited_resources'

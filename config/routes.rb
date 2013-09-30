@@ -2,7 +2,9 @@ Artykuly::Application.routes.draw do
 
   mount Bootsy::Engine => '/bootsy', as: 'bootsy'
 
-  resources :posts
+  localized do
+    resources :posts
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -3,8 +3,8 @@
 <table>
   <thead>
     <tr>
-      <th>Title</th>
-      <th>Body</th>
+      <th><%= Post.model_name.human %> <%= Post.human_attribute_name(:title) %></th>
+      <th><%= t :hello%> <%= Post.human_attribute_name(:body) %> <%= t '.show' %></th>
       <th></th>
       <th></th>
       <th></th>
@@ -16,7 +16,7 @@
       <tr>
         <td><%= post.title %></td>
         <td><%= post.body.html_safe %></td>
-        <td><%= link_to 'Show', post %></td>
+        <td><%= link_to (t '.show'), post %></td>
         <td><%= link_to 'Edit', edit_post_path(post) %></td>
         <td><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Post', new_post_path %>
+<%= link_to (t '.new'), new_post_path %>
