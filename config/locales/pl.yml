@@ -1,0 +1,25 @@
+pl:
+  hello: "Hello świat"
+
+  activerecord:
+    models:
+      post: "Artykuł"
+    attributes:
+      post:
+        title: "Tytuł"
+        body: "Treść"
+
+  posts:
+    index:
+      show: "Pokaż"
+      new: "Nowy artukuł"
+    new:
+      new: "Nowy artukuł"
+
+  helpers:
+    submit:
+      create: "Utwórz %{model}"
+
+  routes:
+    posts: posty
+    new: nowy
